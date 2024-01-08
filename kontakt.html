@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
- <!-- Styles -->
-  <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Kontakt</h1>
-        <a href="#">Login</a>
-    </header>
-    <nav id="mainMenu">
-        <ul>
-            <li><a href="Startseite.html">Home</a></li>
-            <li><a href="angebot.html">Angebote</a></li>
-            <li><a href="über-uns.html">Über Uns</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="Impressum.html">Impressum</a></li>
-    
-
-        </nav>
-        <main>
-            <form>
-                <label for="Name">Name:</label>
-                <input type="text" id="Name" placeholder="Max Muster">
-                <label for="mail">Mail:</label>
-                <input type="email" id="mail" placeholder="maxmuster@gmail.com" required>
-                <input type="checkbox" id="agb" value="agb" required> 
-                <label for="agb"> Rückruf.</label>
-                <input type="submit" value="Senden">
+  
 </body>
+</html>DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+</head>
+<body>
+    <header class="custom-header">
+        <div class="header-content">
+            <img src="Logo_DigitalFit.png" class="logo">
+            <nav class="menu">
+                <a href="angebot.html">Angebot</a>
+                <a href="über-uns.html">Über Uns</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    
+    <h1>Das DigitalFit Team hilft Ihnen gerne weiter das passende Coaching zu finden.</h1>
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.61299853336!2d8.53432137647314!3d47.380471303565486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0e94be043d%3A0xc71552d5ad2fac54!2sLimmatstrasse%2021%2C%208005%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1704706674491!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="container">
+        <section id="contact">
+            <div class="contact-form">
+                <h2>Kontakt über unser Kontaktformular:</h2>
+                <form action="#" method="post">
+                    <label for="name">Name <span class="required">*</span>:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="vorname">Vorname <span class="required">*</span>:</label>
+                    <input type="text" id="vorname" name="vorname" required>
+
+                    <h3>Ich interessiere mich für folgende Kurse:</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kurs1" name="kurse[]" value="Grundlagen der digitalen Technologie">
+                            <label for="kurs1">Grundlagen der digitalen Technologie</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kurs2" name="kurse[]" value="Soziale Medien & Kommunikation">
+                            <label for="kurs2">Soziale Medien & Kommunikation</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kurs3" name="kurse[]" value="Sicherheit in der digitalen Welt">
+                            <label for="kurs3">Sicherheit in der digitalen Welt</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kurs4" name="kurse[]" value="Mobile Geräte und Apps">
+                            <label for="kurs4">Mobile Geräte und Apps</label>
+                        </div>
+                    </div>
+
+                    <h3>Bevorzugte Kontaktaufnahme: <span class="required">*</span></h3>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="email" name="kontaktart" value="email">
+                            <label for="email">E-Mail</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="rueckruf" name="kontaktart" value="rueckruf">
+                            <label for="rueckruf">Rückruf</label>
+                        </div>
+                    </div>
+                    <label for="emailField">E-Mail <span class="required">*</span>:</label>
+                    <input type="email" id="emailField" name="email" required>
+
+                    <label for="telefonField">Telefon <span class="required">*</span>:</label>
+                    <input type="tel" id="telefonField" name="telefon" required>
+
+                    <div class="nachricht-section">
+                        <h3>Ihre Nachricht:</h3>
+                        <textarea id="nachricht" name="nachricht" rows="4"></textarea>
+                    </div>
+
+                    <div class="submit-button">
+                        <input type="submit" value="Formular senden">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 DigitalFit Team. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+
 </html>

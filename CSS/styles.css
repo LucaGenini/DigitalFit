@@ -1,0 +1,843 @@
+/* Globale Stile */
+html {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%; /* Mindesthöhe auf 100% des Viewports setzen */
+  margin: 0; /* Margin auf 0 setzen, um Standardbrowser-Margins zu entfernen */
+  display: flex; /* Flexbox-Layout für das Body-Element aktivieren */
+  flex-direction: column; /* Inhalt vertikal anordnen */
+}
+
+body > header {
+  /* Ihr Header-Stil */
+}
+
+body > main {
+  flex: 1; /* Nimmt den verfügbaren Platz ein, sodass der Footer nach unten gedrückt wird */
+  overflow: auto; /* Fügt Scrollbars hinzu, falls der Inhalt überläuft */
+}
+
+body > footer {
+  /* Ihr Footer-Stil */
+}
+
+
+
+/*blau weisse Hintergrund Farbe für Seite*/
+.angebot-page{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff 800px, #7dd8ff4e 500px);;
+  margin-top: 0px;
+  overflow-x: hidden;
+}
+
+  /*Block für Angebot*/
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 120px);
+  height: px;
+  background-color: #7DD8FF;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 2px solid #ffffff00; /* Optional border */
+  margin: 50px auto; /* Centering the frame */
+}
+
+
+
+/*linksbündiger erster Text auf Angebotseite*/
+.content {
+  margin-left: 60px; /* Abstand von der linken Seite */
+  max-width: 1024px;
+}
+.content p {
+  text-align: left; /* Links ausrichten */ 
+}
+
+/*frame für Einstufungstest Button*/
+.frame-frame2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 338px;
+  height: 55px;
+  background-color: #0071F6;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 2px solid #fff; /* Optional border */
+  margin-left: 1223px;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+/* Hover animation */
+.frame-frame2:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/*Unsere Angebote Text zentriert*/
+.frame-frame3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500;
+  height: 55px;
+  color: #000000;
+  font-size: 50px;
+  border-radius: 8px;
+  margin-top: 111px;
+}
+
+
+.frame-frame4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500;
+  height: 55px;
+  color: #000000;
+  font-size: 50px;
+  border-radius: 8px;
+  margin-top: 111px;
+}
+
+
+
+
+
+/*veschiedene Angebote in Flexboxen*/
+
+.pricing {
+
+  padding: 0; /* Adjust the padding as needed */
+  margin: 0; /* Ensure no margin is affecting the container */
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.plan {
+  min-height: 1000px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 590px;
+  padding: 0px;
+  border: 1px solid #cccccc00;
+  border-radius: 0px;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  background-color: #f9f9f900;
+  /* Rest of your plan styles */
+}
+
+.plan h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  color: #000000;
+  font-size: 20px;
+  text-align: left; /* Links ausrichten */
+  margin-bottom: 50px;
+}
+
+.plan span {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.plan button {
+  margin-top: -25px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+/* Hover animation */
+.plan button:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/*Impressum Seite*/
+
+.impressum-page {
+  display: flex; /* Flex Container, um die .impressum-container zentrieren */
+  justify-content: center; /* Zentriert horizontal */
+  align-items: center; /* Zentriert vertikal */
+  padding: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Stile für den .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+.impressum-page .impressum-container {
+  width: 100%; /* Nimmt die volle Breite des Viewports ein */
+  max-width: 100%; /* Maximale Breite des Containers */
+  padding-left: 60px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.impressum-page .row {
+  display: flex;
+  align-items:last baseline;
+  padding-left: 60px;
+}
+
+/* Stile für Überschriften im .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+.impressum-page .section-title {
+  color: #0071F6; /* Blaue Überschriften */
+  max-width: 1400px;
+  margin-bottom: 10px; /* Abstand unter den Überschriften */
+}
+
+
+.impressum-page .section-subtitle {
+max-width: 1400px;
+font-size:larger;
+font-weight: bold;
+padding-left: 0px;
+}
+
+/*Abstand für die Reihen Sektion*/
+.impressum-page .section-subtitle-row{
+  max-width: 1400px;
+  font-size:larger;
+  font-weight: bold;
+  padding-left: 10px;
+  }
+
+
+/*Footer*/
+.site-footer {
+  margin-top: 100px;
+  background-color: #7DD8FF; /* Hintergrundfarbe des Footers */
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  padding-top: 20px; /* Abstand oben für das Logo */
+  margin-left: 0px; /* Entfernt jeglichen Außenabstand */
+  margin-right: 0px;
+  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+  box-sizing: border-box; /* Stellt sicher, dass Padding in die Breite eingeschlossen wird */
+}
+
+.footer-container {
+  margin: 0 auto; /* Zentriert den Footer-Container */
+  text-align: left; /* Zentriert den Text in allen Abschnitten */
+  line-height: 0.3cm;
+  padding: 0 20px;
+  max-width: 1600px;
+}
+
+.logo-container {
+  text-align: center; /* Zentriert das Logo */
+}
+
+.logo-container img {
+  width: 300px; /* Breite des Logos festlegen */
+  margin-bottom: 20px; /* Abstand unter dem Logo */
+}
+
+.footer-sections {
+  display: flex; /* Flexbox für die Anordnung der Abschnitte */
+  justify-content:space-around; /* Gleichmäßige Verteilung der Abschnitte */
+  flex-wrap: wrap; /* Erlaubt die Abschnitte umzubrechen bei geringer Breite */
+}
+
+.footer-section {
+  flex: 1; /* Lässt die Abschnitte flexibel die Breite füllen */
+  min-width: 150px; /* Minimale Breite für kleinere Bildschirme */
+  margin-bottom: 20px; /* Abstand unter jedem Abschnitt */
+}
+
+.footer-section h3 {
+  margin-bottom: 0.5em; /* Abstand unter der Überschrift */
+}
+
+.footer-section ul {
+  list-style: none; /* Entfernt Listensymbole */
+  padding-left: 0; /* Entfernt den linken Abstand */
+}
+
+.footer-section ul li a {
+  color: rgb(0, 0, 0); /* Farbe der Links */
+  text-decoration: none; /* Keine Unterstreichung der Links */
+  display: block; /* Jeder Link als Block, für leichteres Klicken */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; /* Unterstreichung beim Darüberfahren */
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    justify-content: center; /* Zentriert die Abschnitte auf kleineren Bildschirmen */
+  }
+
+  .footer-section {
+    flex-basis: 100%; /* Lässt die Abschnitte die ganze Breite einnehmen*/
+}
+/das ist css für den Header/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-header {
+    background-color: #7DD8FF;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    width: 100%; /* Header auf volle Breite des Viewports */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maximale Breite des Header-Inhalts festlegen */
+    margin: 0 auto; /* Zentrierung des Inhalts im Header */
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-left: -70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Elemente rechtsbündig ausrichten */
+}
+
+.menu a {
+    margin-left: 20px; /* Abstand zwischen den Menüpunkten */
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    style="width: 400px;"
+}
+
+
+/für über uns seite/
+/Brücke zwischen Generationen schlagen/
+.Text1
+{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1500px;
+        height: 30px;
+        color: #000000;
+        font-size: 30px;
+        border-radius: 10px;
+        margin-top: 90px;
+    margin-bottom: 40px; /* Beispiel: Abstand nach unten */
+}
+
+/content nach Brücke/
+.content1 {
+    margin-left: 60px; /* Abstand von der linken Seite */
+    margin-right: 60px;
+    max-width: none;
+    font-size: 28px;
+text-align: left; /* Links ausrichten */
+  }
+
+/Mission/
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 120px);
+    height: 50px;
+    background-color: #7DD8FF;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin: 50px auto; /* Centering the frame */
+    font-weight: bold;
+  }
+  
+/content für mission/
+.content {
+  margin-left: 60px; /* Abstand von der linken Seite */
+  margin-right: 60px;
+}
+.content p {
+  text-align: left; /* Links ausrichten */
+}
+
+/Button unsere Choachingsangebote/
+.frame-frame2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 60px;
+  background-color: #0071F6;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 2px solid #fff; /* Optional border */
+  margin-left: 580px;
+  text-align: center;
+}
+
+.unserewerte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 120px);
+    height: 50px;
+    background-color: #7DD8FF;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin: 50px auto; /* Centering the frame */
+    font-weight: bold;
+  }
+
+  /Text unter Werte/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    align-items:center
+  }
+  
+  .column {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 20px; /* Fügt Abstand zum rechten Rand hinzu */
+    margin-left: 20px;
+  }
+  
+  /* Stile für Texte in den Spalten */
+  .column p:first-child {
+    font-weight: bold;
+    margin-bottom: auto;
+  }
+  
+  .column p:last-child {
+    margin-top: auto;
+  }
+
+  /überschrifte der werte in der richtigen farbe/
+  .title {
+    color: #ED2424;
+  }
+  .title2 {
+    color: #ED2424;
+  }
+  .title3 {
+    color: #ED2424;
+  }
+  .title4 {
+    color: #0119F3
+  }
+  .title5 {
+   color:#0119F3 
+  }
+  .title6 {
+    color:#FFC700
+  }
+
+  /* Stile für Bilder */
+  .column img {
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+    
+  }
+
+  .buttonkundenrezensionen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    background-color: #0071F6;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin-left: 580px;
+    text-align: center;
+  }
+
+  .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 120px);
+        height: 50px;
+        background-color: #7DD8FF;
+        color: #000000;
+        font-size: 20px;
+        border-radius: 8px;
+        border: 2px solid #fff; /* Optional border */
+        margin: 50px auto; /* Centering the frame */
+        font-weight: bold;
+      }
+  .unserteamtext{
+        margin-left:60px; /* Abstand von der linken Seite */
+        margin-right: 60px;
+        max-width: none;
+        font-size: 17px;
+    text-align: left; /* Links ausrichten */ 
+  }
+
+
+  .container { /vorstellund von team text und bilder/
+    display: flex;
+    align-items: flex-start; /* Spalten am Anfang ausrichten */
+    flex-wrap: wrap; /* Umbruch, um zwei Zeilen zu ermöglichen */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Inhalt am Anfang ausrichten */
+  }
+  
+  .content33 {
+    margin-bottom: 20px;
+    flex: 1;
+    font-size: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .kontaktiere {
+        margin-left: 300px; /* Abstand zum letzten Bild in der zweiten Spalte */
+        margin-top: 400px;
+        padding-bottom: 300px;
+        align-self: flex-start; /* Text auf gleiche Höhe wie Bild in erster Spalte ausrichten */
+         display: flex;
+            padding: 15px 20px; /* Innenabstand anpassen */
+            background-color: #0071F6;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            text-decoration: none; /* Entfernt die Standard-Textunterstreichung */
+            transition: background-color 0.3s ease; /* Übergang für Hover-Effekt */
+          }
+
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 120px);
+    height: 50px;
+    background-color: #7DD8FF;
+    color: #000000;
+    font-size: 40px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin: 50px auto; /* Centering the frame */
+    font-weight: bold;
+}
+.storytext {
+    display: flex;
+    align-items:center; /* Elemente vertikal zentrieren */
+    justify-content: flex-end; /* Inhalt nach rechts ausrichten */
+    padding-right: 80px; /* Zusätzlicher Platz auf der rechten Seite */
+font-size: 30px;
+}
+
+.image img {
+    max-width: 100%; /* Bildbreite auf die maximale Breite des Elternelements beschränken */
+    height: auto; /* Automatische Höhe basierend auf dem Seitenverhältnis beibehalten */
+    margin-right: 20px; /* Abstand zwischen Bild und Text */
+    margin-left: 60px;
+}
+
+.untertextstory {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+}
+.kurs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 120px);
+    height: 50px;
+    background-color: #7DD8FF;
+    color: #000000;
+    font-size: 40px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin: 50px auto; /* Centering the frame */
+    font-weight: bold;
+}  
+   .kurstext {
+    padding-left: 60px;
+padding-top: -30px;
+font-size: 30px;
+   }      
+        
+   .buttonprobekurs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    background-color: #0071F6;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin-left: 580px;
+    text-align: center;
+   }
+   /header/ 
+   body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+   }
+   header {
+       background-color: #7DD8FF;
+       color: #7DD8FF;
+       padding: 1em 0;
+   }
+   .header-content {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       max-width: 960px;
+       margin: 0 auto;
+   }
+   nav a {
+       text-decoration: none;
+       color: #fff;
+       padding: 0.5em 1em;
+   }
+   nav a:hover {
+       background-color: #555;
+   }
+   /H1/
+   .center-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 20vh;
+   }
+   h1 {
+       text-align: center;
+       color: #333; /* Textfarbe anpassen */
+       background-color: #fffcfc; /* Hintergrundfarbe anpassen */
+       padding: 10px; /* Abstand um den Text anpassen */
+       border-radius: 8px; /* Abgerundete Ecken hinzufügen, falls gewünscht */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen, falls gewünscht */
+   }
+   /Video/ 
+   body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+   }
+   .container {
+       display: flex;
+       max-width: 960px;
+       margin: 0 auto;
+   }
+   .video-container {
+       flex: 1;
+   }
+   .content {
+       flex: 1;
+       padding-left: 10px;
+       box-sizing: border-box;
+       text-align: left; /* Align text to the left */
+       margin-right: -30px; /* Reduce right margin */
+   }
+   h2 {
+       color: #333;
+   }
+   p {
+       color: #666;
+   }
+   .cta-button {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #0071F6;
+       color: #fff;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   .cta-button:hover {
+       background-color: #7DD8FF;
+   }
+   /Angebot/ 
+   .column {
+       width: 30.33%; 
+       float: left;
+       box-sizing: border-box;
+       padding: 20px 30px; /* 20px oben und unten, 30px links und rechts */
+   }
+   .row:after {
+       content: "";
+       display: table;
+       clear: both;
+     }
+   h2 {
+       color: #333;
+   }
+   img {
+       max-width: 80%;
+       height: auto;
+       margin-bottom: 10px;
+   }
+   p {
+       color: #666;
+   }
+   .cta-button {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #0071F6;
+       color: #fff;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   .cta-button:hover {
+       background-color: #7DD8FF;
+   }
+   .container {
+       max-width: 800px;
+       margin: 20px auto;
+       text-align: center;
+   }
+   h1 {
+       color: #333;
+   }
+   p {
+       color: #666;
+   }
+   img {
+       max-width: 100%;
+       height: auto;
+       margin-top: 20px;
+   }
+   .center-container {
+       display: flex;
+       position: relative;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column; /* vertikal */
+       height: 20vh;
+       width: 100%; /* Add this line */
+   }
+   /Testimonial/
+   .testimonial-container {
+       display: flex;
+       flex-direction: column;
+   }
+   .testimonial-row {
+       display: flex;
+       justify-content: space-around;
+       padding: 20px 30px; /* 20px oben und unten, 30px links und rechts */
+   }
+   .testimonial {
+       flex: 1;
+       box-sizing: border-box;
+       padding: 20px;
+   }
+   .quote {
+       font-size: 18px;
+       color: #333;
+   }
+   .author {
+       font-style: italic;
+       margin-top: 10px;
+       color: #555;
+   }
+   .rating {
+       font-size: 24px;
+   }
+   
+   /Partner/
+   .partnership-section {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 30vh;
+   }
+   .partner-logo {
+       margin: 10px;
+       padding: 20px; /* Add this line */
+   }
+   .partner-logo img {
+       max-width: 100%;
+       height: auto;
+   }
+   /Bereit?/
+   .cta-section {
+       margin: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       width: 90%;
+       padding: 0 30px; /* Updated padding */
+     }
+     .cta-section h2 {
+       font-size: 24px;
+       margin-bottom: 20px;
+     }
+     .cta-section p {
+       font-size: 16px;
+       line-height: 1.5;
+       margin-bottom: 20px;
+     }
+     .cta-button {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #007bff;
+       color: #fff;
+       text-decoration: none;
+       border-radius: 5px;
+     }
+   
+   .cta-button {
+       /* Add your styles for the button here */
+   }
+   .cta-button:hover {
+       background-color: #7DD8FF;
+   }
