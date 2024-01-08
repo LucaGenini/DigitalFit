@@ -1,0 +1,299 @@
+/* Globale Stile */
+html {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%; /* Mindesthöhe auf 100% des Viewports setzen */
+  margin: 0; /* Margin auf 0 setzen, um Standardbrowser-Margins zu entfernen */
+  display: flex; /* Flexbox-Layout für das Body-Element aktivieren */
+  flex-direction: column; /* Inhalt vertikal anordnen */
+}
+
+body > header {
+  /* Ihr Header-Stil */
+}
+
+body > main {
+  flex: 1; /* Nimmt den verfügbaren Platz ein, sodass der Footer nach unten gedrückt wird */
+  overflow: auto; /* Fügt Scrollbars hinzu, falls der Inhalt überläuft */
+}
+
+body > footer {
+  /* Ihr Footer-Stil */
+}
+
+
+
+/*blau weisse Hintergrund Farbe für Seite*/
+.angebot-page{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff 800px, #7dd8ff4e 500px);;
+  margin-top: 0px;
+  overflow-x: hidden;
+}
+
+  /*Block für Angebot*/
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 120px);
+  height: px;
+  background-color: #7DD8FF;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 2px solid #ffffff00; /* Optional border */
+  margin: 50px auto; /* Centering the frame */
+}
+
+
+
+/*linksbündiger erster Text auf Angebotseite*/
+.content {
+  margin-left: 60px; /* Abstand von der linken Seite */
+  max-width: 1024px;
+}
+.content p {
+  text-align: left; /* Links ausrichten */ 
+}
+
+/*frame für Einstufungstest Button*/
+.frame-frame2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 338px;
+  height: 55px;
+  background-color: #0071F6;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 2px solid #fff; /* Optional border */
+  margin-left: 1223px;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+/* Hover animation */
+.frame-frame2:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/*Unsere Angebote Text zentriert*/
+.frame-frame3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500;
+  height: 55px;
+  color: #000000;
+  font-size: 50px;
+  border-radius: 8px;
+  margin-top: 111px;
+}
+
+
+.frame-frame4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500;
+  height: 55px;
+  color: #000000;
+  font-size: 50px;
+  border-radius: 8px;
+  margin-top: 111px;
+}
+
+
+
+
+
+/*veschiedene Angebote in Flexboxen*/
+
+.pricing {
+
+  padding: 0; /* Adjust the padding as needed */
+  margin: 0; /* Ensure no margin is affecting the container */
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.plan {
+  min-height: 1000px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 590px;
+  padding: 0px;
+  border: 1px solid #cccccc00;
+  border-radius: 0px;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  background-color: #f9f9f900;
+  /* Rest of your plan styles */
+}
+
+.plan h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  color: #000000;
+  font-size: 20px;
+  text-align: left; /* Links ausrichten */
+  margin-bottom: 50px;
+}
+
+.plan span {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.plan button {
+  margin-top: -25px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+/* Hover animation */
+.plan button:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/*Impressum Seite*/
+
+.impressum-page {
+  display: flex; /* Flex Container, um die .impressum-container zentrieren */
+  justify-content: center; /* Zentriert horizontal */
+  align-items: center; /* Zentriert vertikal */
+  padding: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Stile für den .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+.impressum-page .impressum-container {
+  width: 100%; /* Nimmt die volle Breite des Viewports ein */
+  max-width: 100%; /* Maximale Breite des Containers */
+  padding-left: 60px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.impressum-page .row {
+  display: flex;
+  align-items:last baseline;
+  padding-left: 60px;
+}
+
+/* Stile für Überschriften im .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+.impressum-page .section-title {
+  color: #0071F6; /* Blaue Überschriften */
+  max-width: 1400px;
+  margin-bottom: 10px; /* Abstand unter den Überschriften */
+}
+
+
+.impressum-page .section-subtitle {
+max-width: 1400px;
+font-size:larger;
+font-weight: bold;
+padding-left: 0px;
+}
+
+/*Abstand für die Reihen Sektion*/
+.impressum-page .section-subtitle-row{
+  max-width: 1400px;
+  font-size:larger;
+  font-weight: bold;
+  padding-left: 10px;
+  }
+
+
+/*Footer*/
+.site-footer {
+  margin-top: 100px;
+  background-color: #7DD8FF; /* Hintergrundfarbe des Footers */
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  padding-top: 20px; /* Abstand oben für das Logo */
+  margin-left: 0px; /* Entfernt jeglichen Außenabstand */
+  margin-right: 0px;
+  width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+  box-sizing: border-box; /* Stellt sicher, dass Padding in die Breite eingeschlossen wird */
+}
+
+.footer-container {
+  margin: 0 auto; /* Zentriert den Footer-Container */
+  text-align: left; /* Zentriert den Text in allen Abschnitten */
+  line-height: 0.3cm;
+  padding: 0 20px;
+  max-width: 1600px;
+}
+
+.logo-container {
+  text-align: center; /* Zentriert das Logo */
+}
+
+.logo-container img {
+  width: 300px; /* Breite des Logos festlegen */
+  margin-bottom: 20px; /* Abstand unter dem Logo */
+}
+
+.footer-sections {
+  display: flex; /* Flexbox für die Anordnung der Abschnitte */
+  justify-content:space-around; /* Gleichmäßige Verteilung der Abschnitte */
+  flex-wrap: wrap; /* Erlaubt die Abschnitte umzubrechen bei geringer Breite */
+}
+
+.footer-section {
+  flex: 1; /* Lässt die Abschnitte flexibel die Breite füllen */
+  min-width: 150px; /* Minimale Breite für kleinere Bildschirme */
+  margin-bottom: 20px; /* Abstand unter jedem Abschnitt */
+}
+
+.footer-section h3 {
+  margin-bottom: 0.5em; /* Abstand unter der Überschrift */
+}
+
+.footer-section ul {
+  list-style: none; /* Entfernt Listensymbole */
+  padding-left: 0; /* Entfernt den linken Abstand */
+}
+
+.footer-section ul li a {
+  color: rgb(0, 0, 0); /* Farbe der Links */
+  text-decoration: none; /* Keine Unterstreichung der Links */
+  display: block; /* Jeder Link als Block, für leichteres Klicken */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; /* Unterstreichung beim Darüberfahren */
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    justify-content: center; /* Zentriert die Abschnitte auf kleineren Bildschirmen */
+  }
+
+  .footer-section {
+    flex-basis: 100%; /* Lässt die Abschnitte die ganze Breite einnehmen*/
+}
