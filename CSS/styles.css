@@ -297,7 +297,7 @@ padding-left: 0px;
   .footer-section {
     flex-basis: 100%; /* Lässt die Abschnitte die ganze Breite einnehmen*/
 }
-/das ist css für den Header/
+/*das ist css für den Header*/
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -341,10 +341,9 @@ body {
 }
 
 
-/für über uns seite/
-/Brücke zwischen Generationen schlagen/
-.Text1
-{
+/*für über uns seite*/
+/*Brücke zwischen Generationen schlagen*/
+.Text1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -357,7 +356,7 @@ body {
     margin-bottom: 40px; /* Beispiel: Abstand nach unten */
 }
 
-/content nach Brücke/
+/*content nach Brücke*/
 .content1 {
     margin-left: 60px; /* Abstand von der linken Seite */
     margin-right: 60px;
@@ -366,7 +365,7 @@ body {
 text-align: left; /* Links ausrichten */
   }
 
-/Mission/
+/*Mission*/
 .frame {
     display: flex;
     justify-content: center;
@@ -382,7 +381,7 @@ text-align: left; /* Links ausrichten */
     font-weight: bold;
   }
   
-/content für mission/
+/*content für mission*/
 .content {
   margin-left: 60px; /* Abstand von der linken Seite */
   margin-right: 60px;
@@ -391,7 +390,7 @@ text-align: left; /* Links ausrichten */
   text-align: left; /* Links ausrichten */
 }
 
-/Button unsere Choachingsangebote/
+/*Button unsere Choachingsangebote*/
 .frame-frame2 {
   display: flex;
   justify-content: center;
@@ -422,7 +421,7 @@ text-align: left; /* Links ausrichten */
     font-weight: bold;
   }
 
-  /Text unter Werte/
+  /*Text unter Werte*/
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -450,7 +449,7 @@ text-align: left; /* Links ausrichten */
     margin-top: auto;
   }
 
-  /überschrifte der werte in der richtigen farbe/
+  /*überschrifte der werte in der richtigen farbe*/
   .title {
     color: #ED2424;
   }
@@ -516,7 +515,7 @@ text-align: left; /* Links ausrichten */
   }
 
 
-  .container { /vorstellund von team text und bilder/
+  .container { 
     display: flex;
     align-items: flex-start; /* Spalten am Anfang ausrichten */
     flex-wrap: wrap; /* Umbruch, um zwei Zeilen zu ermöglichen */
@@ -623,7 +622,7 @@ font-size: 30px;
     margin-left: 580px;
     text-align: center;
    }
-   /header/ 
+   /*header*/ 
    body {
        font-family: Arial, sans-serif;
        margin: 0;
@@ -649,7 +648,7 @@ font-size: 30px;
    nav a:hover {
        background-color: #555;
    }
-   /H1/
+   /*H1*/
    .center-container {
        display: flex;
        justify-content: center;
@@ -664,7 +663,7 @@ font-size: 30px;
        border-radius: 8px; /* Abgerundete Ecken hinzufügen, falls gewünscht */
        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen, falls gewünscht */
    }
-   /Video/ 
+   /*Video*/ 
    body {
        font-family: Arial, sans-serif;
        margin: 0;
@@ -703,7 +702,7 @@ font-size: 30px;
    .cta-button:hover {
        background-color: #7DD8FF;
    }
-   /Angebot/ 
+   /*Angebot*/ 
    .column {
        width: 30.33%; 
        float: left;
@@ -763,7 +762,7 @@ font-size: 30px;
        height: 20vh;
        width: 100%; /* Add this line */
    }
-   /Testimonial/
+   /*Testimonial*/
    .testimonial-container {
        display: flex;
        flex-direction: column;
@@ -791,7 +790,7 @@ font-size: 30px;
        font-size: 24px;
    }
    
-   /Partner/
+   /*Partner*/
    .partnership-section {
        display: flex;
        justify-content: center;
@@ -806,7 +805,7 @@ font-size: 30px;
        max-width: 100%;
        height: auto;
    }
-   /Bereit?/
+   /*Bereit?*/
    .cta-section {
        margin: 20px;
        display: flex;
@@ -841,3 +840,125 @@ font-size: 30px;
    .cta-button:hover {
        background-color: #7DD8FF;
    }
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #60b0ff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.contact-form h2, .contact-form h3 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.checkbox-item, .radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Hinzugefügt, um den Abstand zwischen den Checkboxen zu definieren */
+}
+
+.checkbox-item input[type="checkbox"], 
+.radio-item input[type="radio"] {
+    margin-right: 5px;
+}
+
+.required {
+    color: red;
+}
+
+.submit-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-button input {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button input:hover {
+    background-color: #45a049;
+}
+
+.nachricht-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#nachricht {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#rueckruf, .submit-button {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#map, #map iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    border: 0;
+}

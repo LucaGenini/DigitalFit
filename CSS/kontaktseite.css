@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #60b0ff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.contact-form h2, .contact-form h3 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.checkbox-item, .radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Hinzugefügt, um den Abstand zwischen den Checkboxen zu definieren */
+}
+
+.checkbox-item input[type="checkbox"], 
+.radio-item input[type="radio"] {
+    margin-right: 5px;
+}
+
+.required {
+    color: red;
+}
+
+.submit-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-button input {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button input:hover {
+    background-color: #45a049;
+}
+
+.nachricht-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#nachricht {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#rueckruf, .submit-button {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#map, #map iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    border: 0;
+}

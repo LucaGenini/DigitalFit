@@ -1,0 +1,192 @@
+/*H1*/
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+h1 {
+    text-align: center;
+    color: #333; /* Textfarbe anpassen */
+    background-color: #fffcfc; /* Hintergrundfarbe anpassen */
+    padding: 10px; /* Abstand um den Text anpassen */
+    border-radius: 8px; /* Abgerundete Ecken hinzufügen, falls gewünscht */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen, falls gewünscht */
+}
+/*Video*/ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.video-container {
+    flex: 1;
+}
+.content {
+    flex: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+    margin-right: -30px; /* Reduce right margin */
+}
+h2 {
+    color: #000000;
+}
+p {
+    color: #000000;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0071F6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #7DD8FF;
+}
+/*Angebot*/ 
+.column {
+    width: 30.33%; 
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 30px; /* 20px oben und unten, 30px links und rechts */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+h2 {
+    color: #000000;
+}
+img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+p {
+    color: #000000;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0071F6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #7DD8FF;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+h1 {
+    color: #000000;
+}
+p {
+    color: #666;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.center-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* vertikal */
+    height: 20vh;
+    width: 100%; /* Add this line */
+}
+/*Testimonial*/
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px; /* 20px oben und unten, 30px links und rechts */
+}
+.testimonial {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.quote {
+    font-size: 18px;
+    color: #000000;
+}
+.author {
+    font-style: italic;
+    margin-top: 10px;
+    color: #000000;
+}
+.rating {
+    font-size: 24px;
+}
+
+/*Partner*/
+.partnership-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.partner-logo {
+    margin: 10px;
+    padding: 20px; /* Add this line */
+}
+.partner-logo img {
+    max-width: 100%;
+    height: auto;
+}
+/*Bereit?*/
+.cta-section {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 0 30px; /* Updated padding */
+  }
+  .cta-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .cta-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+.cta-button {
+    /* Add your styles for the button here */
+}
+.cta-button:hover {
+    background-color: #7DD8FF;
+}

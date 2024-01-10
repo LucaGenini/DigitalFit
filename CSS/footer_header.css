@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header-Stile */
+  .custom-header {
+    background-color: #7DD8FF; /* Header-Hintergrundfarbe */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content {
+    width: 100%; /* Breite des Header-Inhalts */
+    max-width: 1200px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentrierung des Inhalts */
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: auto; /* Automatische Höhe für eine korrekte Skalierung */
+    width: 300px; /* Breite des Logos anpassen */
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 30px; /* Schriftgröße für die Menü-Links */
+  }
+  
+  /* Responsive Header-Stile */
+  @media (max-width: 768px) {
+    .header-content {
+      justify-content: center; /* Zentriert die Elemente auf kleineren Bildschirmen */
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu a {
+      margin: 5px 0; /* Abstand oben und unten für mobile Ansicht */
+    }
+  }
+  
+/*Footer*/
+.site-footer {
+    margin-top: 100px;
+    background-color: #7DD8FF; /* Hintergrundfarbe des Footers */
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    padding-top: 20px; /* Abstand oben für das Logo */
+    margin-left: 0px; /* Entfernt jeglichen Außenabstand */
+    margin-right: 0px;
+    width: 100%; /* Stellt sicher, dass der Footer die volle Breite einnimmt */
+    box-sizing: border-box; /* Stellt sicher, dass Padding in die Breite eingeschlossen wird */
+  }
+  
+  .footer-container {
+    margin: 0 auto; /* Zentriert den Footer-Container */
+    text-align: left; /* Zentriert den Text in allen Abschnitten */
+    line-height: 0.3cm;
+    padding: 0 20px;
+    max-width: 1600px;
+  }
+  
+  .logo-container {
+    text-align: center; /* Zentriert das Logo */
+  }
+  
+  .logo-container img {
+    width: 300px; /* Breite des Logos festlegen */
+    margin-bottom: 20px; /* Abstand unter dem Logo */
+  }
+  
+  .footer-sections {
+    display: flex; /* Flexbox für die Anordnung der Abschnitte */
+    justify-content:space-around; /* Gleichmäßige Verteilung der Abschnitte */
+    flex-wrap: wrap; /* Erlaubt die Abschnitte umzubrechen bei geringer Breite */
+  }
+  
+  .footer-section {
+    flex: 1; /* Lässt die Abschnitte flexibel die Breite füllen */
+    min-width: 150px; /* Minimale Breite für kleinere Bildschirme */
+    margin-bottom: 20px; /* Abstand unter jedem Abschnitt */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 0.5em; /* Abstand unter der Überschrift */
+  }
+  
+  .footer-section ul {
+    list-style: none; /* Entfernt Listensymbole */
+    padding-left: 0; /* Entfernt den linken Abstand */
+  }
+  
+  .footer-section ul li a {
+    color: rgb(0, 0, 0); /* Farbe der Links */
+    text-decoration: none; /* Keine Unterstreichung der Links */
+    display: block; /* Jeder Link als Block, für leichteres Klicken */
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline; /* Unterstreichung beim Darüberfahren */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-sections {
+      justify-content: center; /* Zentriert die Abschnitte auf kleineren Bildschirmen */
+    }
+  
+    .footer-section {
+      flex-basis: 100%; /* Lässt die Abschnitte die ganze Breite einnehmen*/
+  }

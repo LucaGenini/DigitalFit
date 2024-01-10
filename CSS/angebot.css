@@ -1,0 +1,149 @@
+  /*blau weisse Hintergrund Farbe für Seite*/
+  .angebot-page{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff 800px, #7dd8ff4e 500px);;
+    margin-top: 0px;
+    overflow-x: hidden;
+  }
+  
+    /*Block für Angebot*/
+  .frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 120px);
+    height: px;
+    background-color: #7DD8FF;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid #ffffff00; /* Optional border */
+    margin: 50px auto; /* Centering the frame */
+  }
+  
+  
+  
+  /*linksbündiger erster Text auf Angebotseite*/
+  .content {
+    margin-left: 60px; /* Abstand von der linken Seite */
+    max-width: 1024px;
+  }
+  .content p {
+    text-align: left; /* Links ausrichten */ 
+  }
+  
+  /*frame für Einstufungstest Button*/
+  .frame-frame2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 338px;
+    height: 55px;
+    background-color: #0071F6;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid #fff; /* Optional border */
+    margin-left: 1223px;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+  }
+  /* Hover animation */
+  .frame-frame2:hover {
+    transform: scale(1.1); /* Enlarge the button on hover */
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+  /*Unsere Angebote Text zentriert*/
+  .frame-frame3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500;
+    height: 55px;
+    color: #000000;
+    font-size: 50px;
+    border-radius: 8px;
+    margin-top: 111px;
+  }
+  
+  
+  .frame-frame4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500;
+    height: 55px;
+    color: #000000;
+    font-size: 50px;
+    border-radius: 8px;
+    margin-top: 111px;
+  }
+  
+  
+  
+  
+  
+  /*veschiedene Angebote in Flexboxen*/
+  
+  .pricing {
+  
+    padding: 0; /* Adjust the padding as needed */
+    margin: 0; /* Ensure no margin is affecting the container */
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .plan {
+    min-height: 1000px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 590px;
+    padding: 0px;
+    border: 1px solid #cccccc00;
+    border-radius: 0px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #f9f9f900;
+    /* Rest of your plan styles */
+  }
+  
+  .plan h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .plan p {
+    color: #000000;
+    font-size: 20px;
+    text-align: left; /* Links ausrichten */
+    margin-bottom: 50px;
+  }
+  
+  .plan span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .plan button {
+    margin-top: -25px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+  }
+  /* Hover animation */
+  .plan button:hover {
+    transform: scale(1.1); /* Enlarge the button on hover */
+    background-color: #0056b3; /* Change background color on hover */
+  }

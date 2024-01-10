@@ -1,0 +1,49 @@
+/*Impressum Seite*/
+
+.impressum-page {
+    display: flex; /* Flex Container, um die .impressum-container zentrieren */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    padding: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  /* Stile für den .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+  .impressum-page .impressum-container {
+    width: 100%; /* Nimmt die volle Breite des Viewports ein */
+    max-width: 100%; /* Maximale Breite des Containers */
+    padding-left: 60px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .impressum-page .row {
+    display: flex;
+    align-items:last baseline;
+    padding-left: 60px;
+  }
+  
+  /* Stile für Überschriften im .impressum-container, die nur auf der Impressum-Seite angewendet werden */
+  .impressum-page .section-title {
+    color: #0071F6; /* Blaue Überschriften */
+    max-width: 1400px;
+    margin-bottom: 10px; /* Abstand unter den Überschriften */
+  }
+  
+  
+  .impressum-page .section-subtitle {
+  max-width: 1400px;
+  font-size:larger;
+  font-weight: bold;
+  padding-left: 0px;
+  }
+  
+  /*Abstand für die Reihen Sektion*/
+  .impressum-page .section-subtitle-row{
+    max-width: 1400px;
+    font-size:larger;
+    font-weight: bold;
+    padding-left: 10px;
+    }

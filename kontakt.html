@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startseite</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Angebote</title>
+    <link rel="stylesheet" href="CSS/kontaktseite.css">
+    <link rel="stylesheet" href="CSS/footer_header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="icon" type="image/png" href="Logo Footer/Icon.png">
 </head>
-<body>
-    <header class="custom-header">
-        <div class="header-content">
-            <img src="Logo_DigitalFit.png" class="logo">
-            <nav class="menu">
-                <a href="angebot.html">Angebot</a>
-                <a href="über-uns.html">Über Uns</a>
-                <a href="kontakt.html">Kontakt</a>
-            </nav>
-        </div>
-    </header>
-    
+<body class="angebot-page">
+  <header class="custom-header">
+      <div class="header-content">
+          <img src="Logo_DigitalFit.png" class="logo" alt="DigitalFit Logo">
+          <nav class="menu">
+              <a href="angebot.html">Angebot</a>
+              <a href="ueber-uns.html">Über Uns</a>
+              <a href="kontakt.html">Kontakt</a>
+          </nav>
+      </div>
+  </header>
+
     <h1>Das DigitalFit Team hilft Ihnen gerne weiter das passende Coaching zu finden.</h1>
     <section id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.61299853336!2d8.53432137647314!3d47.380471303565486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0e94be043d%3A0xc71552d5ad2fac54!2sLimmatstrasse%2021%2C%208005%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1704706674491!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -96,11 +88,56 @@
             </div>
         </section>
     </section>
+<!-- Footer -->
 
-    <footer>
-        <p>&copy; 2023 DigitalFit Team. Alle Rechte vorbehalten.</p>
-    </footer>
-
-</body>
-
-</html>
+<footer class="site-footer">
+    <!-- Hauptcontainer für den Footer -->
+    <div class="footer-container">
+      <!-- Logo-Container, zentriert über den anderen Abschnitten -->
+      <div class="logo-container">
+        <!-- Platzhalter für das Logo -->
+        <img src="Logo Footer/Logo_DigitalFit.png" alt="Logo" style="width: 300px;">
+      </div>
+      <!-- Container für die Abschnitte des Footers -->
+      <div class="footer-sections">
+        <!-- Abschnitt für Impressum -->
+        <div class="footer-section">
+          <h3>Impressum</h3>
+          <p>DigitalFit AG</p>
+          <p>Limmatstrasse 21</p>
+          <p>8005 Zürich</p>
+          <p>Schweiz</p>
+        </div>
+        <!-- Abschnitt für Navigation -->
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <p><li><a href="Startseite.html">Home</a></li></p>
+            <p><li><a href="#">Angebote</a></li></p>
+            <p><li><a href="über-uns.html">Über Uns</a></li></p>
+            <p><li><a href="kontakt.html">Kontakt</a></li></p>
+            <p><li><a href="Impressum.html">Impressum</a></li></p>
+          </ul>
+        </div>
+        <!-- Abschnitte für Datenschutz und AGB (leer) -->
+        <div class="footer-section">
+          <h3>Datenschutz</h3>
+        </div>
+        <div class="footer-section">
+          <h3>AGB</h3>
+        </div>
+        <!-- Abschnitt für Kontakt -->
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <p>Telefon: +41 79 625 72 83</p>
+          <p>E-Mail: hello@digitalfit.ch</p>
+        </div>
+        <!-- Urheberrechtsinformation am Ende -->
+        <div class="footer-section">
+          <h3><p>2023 Copyright, DigitalFit AG</p></h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>
